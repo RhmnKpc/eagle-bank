@@ -1,0 +1,29 @@
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+gradle.properties
+
+### Semantic Version ###
+version.properties
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Mac OS ###
+.DS_Store
+
+### jenv Configuration File ###
+.java-version
+
+### ENVIRONMENT ###
+.env
+
+

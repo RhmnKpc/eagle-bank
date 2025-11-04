@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  datasource:
+    # Will be overridden by TestContainers
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: test
+    password: test
+
+logging:
+  level:
+    com.eaglebank: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.springframework.security: DEBUG
+
+jwt:
+  secret: test-secret-key-for-jwt-token-generation-in-tests-minimum-256-bits
+  expiration: 3600000
